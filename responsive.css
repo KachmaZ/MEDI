@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1239px) {
+    header {
+        display: none;
+    }
+
+    nav {
+        justify-content: start;
+    } 
+
+    i.nav-links-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .appoint-btn {
+        display: none;
+    }
+}
+

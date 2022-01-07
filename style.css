@@ -1,0 +1,721 @@
+@font-face {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Gilroy'),
+		url('/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'), 
+		url('/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+		url('/fonts/Gilroy/Gilroy-Regular.ttf') format('ttf'),
+		url('/fonts/Gilroy/Gilroy-Regular.eot') format('eot');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Gilroy";
+}
+
+/* Header styles */
+
+header {
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-elem {
+    height: 100%;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 1px solid #C4C4C4;
+}
+
+.header-elem:last-child {
+    border-right: 1px solid #C4C4C4;
+}
+
+.logo {
+    font-size: 38px;
+}
+
+.number {
+    font-size: 16px;
+    text-align: center;
+}
+
+.our-salons-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-salons-text {
+    margin-right: 15px; 
+    text-align: center;
+
+    font-size: 16px;
+}
+
+.our-salons-logo {
+    color: #4FBFA5;
+}
+
+.vis-imp-btn {
+    width: 270px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0;
+
+    color: #FFFFFF;
+
+    background-color: #00868A;
+
+    border: 0;
+}
+
+.vis-imp-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.vis-imp-logo {
+    font-size: 24px;
+}
+
+.fab {
+    font-size: 20px;
+    color: #4FBFA5;
+
+}
+
+/* Navbar style */
+
+nav {
+    height: 87px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #4FBFA5;
+}
+
+i.nav-links-icon {
+    display: none;
+
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.nav-links {
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    
+    
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.appoint-btn {
+    width: 175px;
+    height: 40px;
+
+    border: 0;
+}
+
+/* First screen style */
+
+.first-screen {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #4FBFA5;
+}
+
+.cosmetlolgy-container {
+    width: 90%;
+    height: 520px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cosmetology-info {
+    width: 35%;
+    height: auto;
+    padding: 130px 60px 60px 0;
+
+    color: #FFFFFF;
+}
+
+.cosmetology-head {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.cosmetology-text {
+margin-bottom: 40px;
+
+    text-align: justify;
+}
+
+.cosmetology-btn {
+    width: 163px;
+    height: 50px;
+    
+    font-family: "Gilroy";
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+
+    background-color: #00868A;
+
+    border: 0;
+}
+
+.cosmetology-arrows {
+    float: right;
+    display: flex;
+    border: 1px solid #FFFFFF;
+}
+
+.arrow {
+    width: 60px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:first-child {
+    border-right: 1px solid #FFFFFF;
+}
+
+.cosmetology-img {
+    width: 65%;
+    height: 100%;
+
+    background-image: url(img/cosmetology.jpg);
+    background-size: cover;
+}
+
+.categories-container {
+    width: 90%;
+    height: 80px;
+    background-color: #4FBFA5;
+
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+
+    color: #FFFFFF;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.category {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00868A;
+    border-top: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+}
+
+.category:last-child {
+    border-right: none;
+}
+
+.active-cat {
+    width: 50%;
+
+    background-color: #4FBFA5;
+}
+
+/* Second screen style */
+
+.second-screen {
+    margin: 80px 5% 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.sec-container {
+    display: flex;
+}
+
+.innovations-container {
+    width: 40%;
+    height: 580px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #FFFFFF;
+
+    background-color: #00868A;
+}
+
+.inno-info {
+    height: 332px;
+    margin: 40px;
+}
+
+.inno-head {
+    width: 125px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #4FBFA5;
+}
+
+.inno-text {
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.inno-details {
+    display: flex;
+    align-items: center;;
+}
+
+.inno-details > .arrow {
+    margin-right: 20px;
+
+    font-size: 20px;
+
+    border: 1px solid #FFFFFF;
+}
+
+.inno-details > span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.inno-pic {
+    width: 100%;
+    height: 30%;
+
+    background-image: url(img/cosmetology.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aesthetics-container {
+    padding: 60px 0 0 135px;
+}
+
+.aesthetics-head {
+    width: 186px;
+    height: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    color: #FFFFFF;
+
+    background-color: #4FBFA5;
+}
+
+.achieves-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.achieves-list {
+    width: 214px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achieves-list-item {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.achieve-num {
+    font-size: 48px;
+
+    color: #4FBFA5;
+}
+
+.achieve-text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.achieves-patent {
+    width: 306px;
+    height: 400px;
+
+    background-image: url(img/patent.png);
+    background-size: cover;
+    filter: drop-shadow(0px 0px 20px rgba(138, 138, 138, 0.25));
+}
+
+.news-container {
+    width: 40%;
+    height: 500px;
+
+    color: #FFFFFF;
+
+    background-color: #4FBFA5;
+}
+
+.news-head {
+    width: 100px;
+    height: 40px;
+    margin: 30px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+
+    background-color: #00868A;
+}
+
+.news-list {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-btn {
+    height: calc(100% / 3);
+    padding: 35px 40px;
+
+    color: inherit;
+    text-align: left;
+    font-size: 18px;
+
+    background-color: #4FBFA5;
+    border: none;
+}
+
+.active-new {
+    background-color: #00868A;
+}
+
+.news-text {
+    width: 60%;
+    height: 500px;
+    padding: 35px 60px;
+
+    overflow: scroll;
+
+    background-color: #00858a10;
+}
+
+.news-text > h2 {
+
+    font-size: 20px;
+    font-weight: bold; /* Разобраться с жирным шрифтом */
+    line-height: 36px;
+}
+
+.news-text > ul > li {
+    margin-top: 20px;
+
+    color: #4FBFA5;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+li > span {
+    color: #000000;
+}
+
+/* Third screen style */
+
+.third-screen {
+    position: relative;
+
+    margin-bottom: 100px;
+}
+
+.third-screen-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 60%;
+
+    background-color: #00868A;
+    opacity: 0.1;
+
+    z-index: 0;
+}
+
+.third-screen-content {
+    position: relative;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.actual-offers {
+    width: 100%;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.actual-offers > h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #00868A;
+}
+
+.offers-gallery {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers-gallery-card {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.offers-gallery-card:last-child {
+    margin-right: 0;
+}
+
+.offers-gallery-card > .card-img {
+    width: 100%;
+    height: 230px;
+    padding: 30px;
+
+    background-image: url(img/galimg1.jpg);
+}
+
+.card-img > .card-category {
+
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    background-color: #4FBFA5;
+}
+
+.offers-gallery-card > .card-desc {
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    background-color: #00868A;
+}
+
+/* Footer style */
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-panels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 150px;
+    row-gap: 20px;
+}
+
+.link-panel {
+    width: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link-panel > h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.link-panel > a {
+    margin-bottom: 15px;
+
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-item > h3 {
+    margin-bottom: 10px;
+
+    font-size: 11px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    opacity: 0.5;
+}
+
+.contact-item > p {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.contact-item > button {
+    width: 164px;
+    height: 45px;
+    margin: 0;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background-color: #00868A;
+
+    border: 0;
+}
+
+.footer-bottom {
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-elem {
+    height: 100%;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+}
+
+.footer-elem:last-child {
+    border-right: 1px solid #C4C4C4;
+}
+
+.copyright {
+    width: 300px;
+    margin-right: 70px;
+
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.privacy-policy {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
